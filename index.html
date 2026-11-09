@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KPSS Hazırlık: Soru Defteri — Çevrimdışı Genel Yetenek &amp; Genel Kültür Soru Bankası</title>
+  <meta
+    name="description"
+    content="ÖSYM &amp; AİS kurumsal tasarımından ve Spiralli Ders Defteri metaforundan ilham alan, %100 çevrimdışı çalışan 4.594 soruluk KPSS Genel Yetenek &amp; Genel Kültür soru bankası uygulaması."
+  />
+  <meta name="theme-color" content="#0F141C" />
+  <meta property="og:title" content="KPSS Hazırlık: Soru Defteri — Çevrimdışı Soru Bankası" />
+  <meta
+    property="og:description"
+    content="5 ders ve 38 alt konuda 4.594 doğrulanmış soru, 10 soruluk hızlı testler, yanlışlarım telafi sistemi ve detaylı çözüm açıklamalarıyla tamamen çevrimdışı KPSS hazırlık uygulaması."
+  />
+  <meta property="og:image" content="assets/icon.png" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/icon.png" />
+
+  <!-- Google Fonts: Montserrat (400, 500, 600, 700) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Sticky Top Navigation -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand-link" aria-label="KPSS Hazırlık Ana Sayfa">
+        <img src="assets/icon.png" alt="KPSS Mobil Uygulama İkonu" class="brand-icon" />
+        <div class="brand-text-group">
+          <span class="brand-name">KPSS</span>
+          <span class="osym-ais-pill">ÖSYM · AİS</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#defterler">Ders Defterleri</a></li>
+        <li><a href="#ozellikler">Özellikler</a></li>
+        <li><a href="#ornek-soru">Örnek Soru</a></li>
+        <li><a href="#ekran-goruntuleri">Ekran Görüntüleri</a></li>
+        <li><a href="privacy-policy.html">Gizlilik Politikası</a></li>
+        <li><a href="terms-and-conditions.html">Kullanım Koşulları</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button
+          type="button"
+          class="theme-toggle"
+          id="themeToggleBtn"
+          aria-label="Temayı değiştir"
+        >
+          <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <span id="themeToggleLabel">Koyu Tema</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="hero-badges">
+            <span class="badge badge-accent">ÖSYM &amp; AİS Kurumsal Tasarım</span>
+            <span class="badge badge-primary">%100 Çevrimdışı · SQLite</span>
+            <span class="badge badge-success">Reklamsız &amp; Üyeliksiz</span>
+          </div>
+
+          <h1 class="hero-title">
+            KPSS Genel Yetenek &amp; Genel Kültür
+            <span class="highlight-orange">Çıkmış Soru Defteri</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Soğuk ve karmaşık test listeleri yerine çalışma masanızdaki
+            <strong>renkli spiralli ders defterlerini</strong> cebinize taşıyın.
+            5 ders ve 38 alt konuda <strong>4.594 doğrulanmış, tamamı çözümlü</strong> soruyu
+            internet bağlantısına ihtiyaç duymadan çözün.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#ekran-goruntuleri" class="btn btn-primary">
+              Uygulama Ekranlarını İncele
+            </a>
+            <a href="#defterler" class="btn btn-outline">
+              5 Ders · 38 Konu Dağılımı
+            </a>
+          </div>
+
+          <div class="store-badges" aria-label="Mobil Mağaza Bilgileri">
+            <a href="#ekran-goruntuleri" class="store-pill" data-select-platform="ios">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.33c.64-.78 1.08-1.86.96-2.94-.93.04-2.06.62-2.72 1.4-.58.68-1.1 1.79-.96 2.84 1.04.08 2.08-.52 2.72-1.3z"/>
+              </svg>
+              <div class="store-pill-meta">
+                <span>iOS İçin Tasarlandı</span>
+                <strong>App Store · iPhone</strong>
+              </div>
+            </a>
+
+            <a href="#ekran-goruntuleri" class="store-pill" data-select-platform="android">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M3 20.5v-17c0-.83.67-1.5 1.5-1.5.31 0 .61.1.86.28l14.18 8.5c.71.43.94 1.35.51 2.06-.13.21-.3.38-.51.51l-14.18 8.5c-.71.43-1.63.2-2.06-.51-.18-.25-.3-.55-.3-.84z"/>
+              </svg>
+              <div class="store-pill-meta">
+                <span>Android İçin Tasarlandı</span>
+                <strong>Google Play · Android</strong>
+              </div>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-value orange">4.594</div>
+              <div class="stat-label">Çözümlü Soru</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value blue">5 Ders</div>
+              <div class="stat-label">38 Alt Konu</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value green">%100</div>
+              <div class="stat-label">Çevrimdışı (Offline)</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value">0 Veri</div>
+              <div class="stat-label">Tam Gizlilik</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: App Screenshot Stage -->
+        <div class="hero-Stage">
+          <!-- Floating 3/4 Daily Goal Ring Badge -->
+          <div class="floating-goal-card">
+            <svg class="goal-ring-svg" viewBox="0 0 64 64">
+              <circle
+                cx="32"
+                cy="32"
+                r="25"
+                fill="none"
+                stroke="#E2E8F0"
+                stroke-width="6"
+                stroke-dasharray="118 160"
+                stroke-linecap="round"
+                transform="rotate(135 32 32)"
+              />
+              <circle
+                cx="32"
+                cy="32"
+                r="25"
+                fill="none"
+                stroke="#F37021"
+                stroke-width="6"
+                stroke-dasharray="106 160"
+                stroke-linecap="round"
+                transform="rotate(135 32 32)"
+              />
+              <text
+                x="32"
+                y="36"
+                text-anchor="middle"
+                font-size="12"
+                font-weight="700"
+                fill="currentColor"
+              >18/20</text>
+            </svg>
+            <div class="floating-goal-info">
+              <strong>Günlük hedef</strong>
+              <span>7 günlük seri</span>
+            </div>
+          </div>
+
+          <div class="phone-frame-hero">
+            <img
+              src="assets/i1.png"
+              alt="KPSS Hazırlık Ana Sayfa Ekran Görüntüsü"
+            />
+          </div>
+
+          <div class="phone-frame-secondary">
+            <img
+              src="assets/i2.png"
+              alt="KPSS Spiralli Ders Defterleri Ekran Görüntüsü"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 1: Spiralli Ders Defterleri & 38 Konu Dağılımı -->
+    <section id="defterler" class="section section-muted">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-accent">Spiralli Ders Defteri Metaforu</span>
+          <h2 class="section-title">5 Ders, 38 Alt Konu, 4.594 Doğrulanmış Soru</h2>
+          <p class="section-desc">
+            Her ders; kendine özgü sırt rengi, 4 spiral deliği, üst sayfa ayracı (bookmark) ve
+            katmanlı arka sayfa görünümüyle gerçek bir çalışma defteri olarak tasarlandı.
+            Alt konularını görmek istediğiniz ders defterine tıklayın:
+          </p>
+        </div>
+
+        <!-- 5 Spiral Course Notebooks -->
+        <div class="notebooks-grid" id="notebooksGrid">
+          <!-- Türkçe -->
+          <div class="notebook-wrapper nb-turkce active-notebook" data-course="turkce" role="button" tabindex="0">
+            <div class="notebook-back-page"></div>
+            <div class="notebook-card">
+              <div class="notebook-spine">
+                <span class="notebook-hole"></span>
+                <span class="notebook-hole"></span>
+                <span class="notebook-hole"></span>
+                <span class="notebook-hole"></span>
+              </div>
+              <div class="notebook-bookmark"></div>
+              <div class="notebook-body">
+                <div class="notebook-top-row">
+                  <span class="notebook-code-badge">TR · 8 KONU</span>
+                  <span class="notebook-acc-badge">1.468 Soru</span>
+                </div>
+                <div>
+                  <h3 class="notebook-title">Türkçe</h3>
+                  <p class="notebook-subtitle">Paragraf, Dil Bilgisi &amp; Sözel Mantık</p>
+                </div>
+                <div>
+                  <div class="notebook-progress-track">
+                    <div class="notebook-progress-fill" style="width: 92%"></div>
+                  </div>
+                  <div class="notebook-bottom-row">
+                    <span class="notebook-count">AİS Mavisi (#005A9C)</span>
+                    <span class="notebook-open-link">Konuları Gör ›</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tarih -->
+          <div class="notebook-wrapper nb-tarih" data-course="tarih" role="button" tabindex="0">
+            <div class="notebook-back-page"></div>
+            <div class="notebook-card">
+              <div class="notebook-spine">
+                <span class="notebook-hole"></span>
+                <span class="notebook-hole"></span>
+                <span class="notebook-hole"></span>
+                <span class="notebook-hole"></span>
+              </div>
+              <div class="notebook-bookmark"></div>
+              <div class="notebook-body">
+                <div class="notebook-top-row">
+                  <span class="notebook-code-badge">TA · 10 KONU</span>
+                  <span class="notebook-acc-badge">1.544 Soru</span>
+                </div>
+                <div>
+                  <h3 class="notebook-title">Tarih</h3>
+                  <p class="notebook-subtitle">İslamiyet Öncesi, Osmanlı &amp; İnkılap</p>
+                </div>
+                <div>
+                  <div class="notebook-progress-track">
+                    <div class="notebook-progress-fill" style="width: 100%"></div>
+                  </div>
+                  <div class="notebook-bottom-row">
+                    <span class="notebook-count">ÖSYM Turuncusu (#F37021)</span>
+                    <span class="notebook-open-link">Konuları Gör ›</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coğrafya -->
+          <div class="notebook-wrapper nb-cografya" data-course="cografya" role="button" tabindex="0">
+            <div class="notebook-back-page"></div>
+            <div class="notebook-card">
+              <div class="notebook-spine">
+                <span class="notebook-hole"></span>
+                <span class="notebook-hole"></span>
+                <span class="notebook-hole"></span>
+                <span class="notebook-hole"></span>
+              </div>
+              <div class="notebook-bookmark"></div>
+              <div class="notebook-body">
+                <div class="notebook-top-row">
+                  <span class="notebook-code-badge">CO · 8 KONU</span>
+                  <span class="notebook-acc-badge">917 Soru</span>
+                </div>
+                <div>
+                  <h3 class="notebook-title">Coğrafya</h3>
+                  <p class="notebook-subtitle">Türkiye Fiziki, Beşeri &amp; Ekonomik</p>
+                </div>
+                <div>
+                  <div class="notebook-progress-track">
+                    <div class="notebook-progress-fill" style="width: 68%"></div>
+                  </div>
+                  <div class="notebook-bottom-row">
+                    <span class="notebook-count">Zümrüt Yeşili (#16A34A)</span>
+                    <span class="notebook-open-link">Konuları Gör ›</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vatandaşlık -->
+          <div class="notebook-wrapper nb-vatandaslik" data-course="vatandaslik" role="button" tabindex="0">
+            <div class="notebook-back-page"></div>
+            <div class="notebook-card">
+              <div class="notebook-spine">
+                <span class="notebook-hole"></span>
+                <span class="notebook-hole"></span>
+                <span class="notebook-hole"></span>
+                <span class="notebook-hole"></span>
+              </div>
+              <div class="notebook-bookmark"></div>
+              <div class="notebook-body">
+                <div class="notebook-top-row">
+                  <span class="notebook-code-badge">VA · 6 KONU</span>
+                  <span class="notebook-acc-badge">467 Soru</span>
+                </div>
+                <div>
+                  <h3 class="notebook-title">Vatandaşlık</h3>
+                  <p class="notebook-subtitle">Hukuk, Anayasa, Yasama, Yürütme &amp; Yargı</p>
+                </div>
+                <div>
+                  <div class="notebook-progress-track">
+                    <div class="notebook-progress-fill" style="width: 45%"></div>
+                  </div>
+                  <div class="notebook-bottom-row">
+                    <span class="notebook-count">Mercan Kırmızısı (#DC2626)</span>
+                    <span class="notebook-open-link">Konuları Gör ›</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Güncel Bilgiler -->
+          <div class="notebook-wrapper nb-guncel" data-course="guncel" role="button" tabindex="0">
+            <div class="notebook-back-page"></div>
+            <div class="notebook-card">
+              <div class="notebook-spine">
+                <span class="notebook-hole"></span>
+                <span class="notebook-hole"></span>
+                <span class="notebook-hole"></span>
+                <span class="notebook-hole"></span>
+              </div>
+              <div class="notebook-bookmark"></div>
+              <div class="notebook-body">
+                <div class="notebook-top-row">
+                  <span class="notebook-code-badge">GÜ · 6 KONU</span>
+                  <span class="notebook-acc-badge">198 Soru</span>
+                </div>
+                <div>
+                  <h3 class="notebook-title">Güncel Bilgiler</h3>
+                  <p class="notebook-subtitle">Türkiye, Dünya, Kültür-Sanat &amp; Bilim</p>
+                </div>
+                <div>
+                  <div class="notebook-progress-track">
+                    <div class="notebook-progress-fill" style="width: 32%"></div>
+                  </div>
+                  <div class="notebook-bottom-row">
+                    <span class="notebook-count">Kurumsal Lacivert (#1B365D)</span>
+                    <span class="notebook-open-link">Konuları Gör ›</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dynamic Topic Breakdown Panel -->
+        <div class="topic-explorer" id="topicExplorer">
+          <div class="topic-explorer-header">
+            <div class="topic-explorer-title">
+              <span id="explorerCourseTitle">Türkçe Defteri — Alt Konu Dağılımı</span>
+            </div>
+            <span class="badge badge-primary" id="explorerCourseSummary">8 Konu · 1.468 Soru</span>
+          </div>
+          <div class="topic-chips-grid" id="topicChipsGrid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Temel Özellikler & Akıllı Çalışma Akışı -->
+    <section id="ozellikler" class="section">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="badge badge-primary">Odaklı KPSS Hazırlık Deneyimi</span>
+          <h2 class="section-title">Sadece Soru Çözmeye Odaklanmanız İçin Tasarlandı</h2>
+          <p class="section-desc">
+            Mobil ekran ergonomisine uygun olarak şekillendirilmiş, gereksiz kalabalıktan
+            uzak ve ÖSYM sınav ciddiyetini yansıtan çalışma araçları.
+          </p>
+        </div>
+
+        <div class="features-bento">
+          <!-- Yanlışlarım Replica -->
+          <div class="feature-card wrong-replica">
+            <span class="watermark-icon danger" aria-hidden="true">✕</span>
+            <div>
+              <span class="badge" style="background: var(--danger-soft); color: var(--danger); margin-bottom: 12px;">
+                Akıllı Telafi Sistemi
+              </span>
+              <h3>Yanlışlarım Testi</h3>
+              <p>
+                Testlerde yanlış yaptığınız sorular otomatik olarak <strong>Yanlışlarım</strong>
+                havuzuna eklenir. Tekrar testinde doğru çözdüğünüz anda listeden otomatik düşer.
+              </p>
+            </div>
+            <span class="feature-action-tag" style="color: var(--danger);">Tekrar çöz · Eksiklerini kapat</span>
+          </div>
+
+          <!-- Favorilerim Replica -->
+          <div class="feature-card fav-replica">
+            <span class="watermark-icon warning" aria-hidden="true">★</span>
+            <div>
+              <span class="badge" style="background: var(--warning-soft); color: var(--warning); margin-bottom: 12px;">
+                Çalışma Notu Modu
+              </span>
+              <h3>Favori Defterim (İnceleme Modu)</h3>
+              <p>
+                Yıldızladığınız sorular tekrar test olarak çözdürülmez; ders filtreli
+                <strong>Favori Defterim</strong> ekranında yeşil vurgulu doğru cevabı ve çözüm açıklamasıyla incelenir.
+              </p>
+            </div>
+            <span class="feature-action-tag" style="color: var(--warning);">Defteri incele · Not gibi oku</span>
+          </div>
+
+          <!-- 10 Soruluk Hızlı Mini Testler -->
+          <div class="feature-card">
+            <div>
+              <span class="badge badge-primary" style="margin-bottom: 12px;">
+                Hızlı Test · 10 Soru
+              </span>
+              <h3>10 Soruluk Odaklı Mini Testler</h3>
+              <p>
+                Genel karışık, ders bazlı veya alt konu bazlı 10 soruluk mini testlerle
+                otobüste, molada veya çalışma masasında hiç çözmediğiniz sorular öncelikli olarak ilerleyin.
+              </p>
+            </div>
+            <span class="feature-action-tag" style="color: var(--primary);">Çözülmemiş sorular öncelikli</span>
+          </div>
+
+          <!-- ÖSYM Kitapçık Dizgisi -->
+          <div class="feature-card">
+            <div>
+              <span class="badge badge-accent" style="margin-bottom: 12px;">
+                Montserrat Tipografi
+              </span>
+              <h3>ÖSYM Kitapçık Düzeni</h3>
+              <p>
+                Paragraf gövdesi orta ağırlıkta, son cümledeki <strong>soru kökü otomatik kalın (Bold)</strong>
+                ve <u>altı çizili</u> ifadeler gerçek sınav kitapçığı dizgisiyle sunulur.
+              </p>
+            </div>
+            <span class="feature-action-tag" style="color: var(--accent);">Göz yormayan okuma hiyerarşisi</span>
+          </div>
+
+          <!-- ÖSYM Net ve Başarı Analizi -->
+          <div class="feature-card">
+            <div>
+              <span class="badge badge-success" style="margin-bottom: 12px;">
+                4 Yanlış 1 Doğruyu Götürür
+              </span>
+              <h3>Gerçek Net &amp; 7 Günlük Seri</h3>
+              <p>
+                ÖSYM standartlarına göre gerçek netiniz (<strong>Doğru − Yanlış / 4</strong>),
+                7 günlük soru çözüm grafiğiniz ve en zayıf konularınız anlık olarak hesaplanır.
+              </p>
+            </div>
+            <span class="feature-action-tag" style="color: var(--success);">%0–39 Kırmızı · %40–69 Kehribar · %70+ Yeşil</span>
+          </div>
+
+          <!-- %100 Çevrimdışı & Tam Gizlilik -->
+          <div class="feature-card">
+            <div>
+              <span class="badge badge-primary" style="margin-bottom: 12px;">
+                Yerel SQLite Veritabanı
+              </span>
+              <h3>%100 Çevrimdışı &amp; Sıfır Veri Takibi</h3>
+              <p>
+                Uçak modunda bile eksiksiz çalışır. Hesap açma zorunluluğu yoktur; tüm ilerlemeniz
+                yalnızca kendi cihazınızda (SQLite) saklanır ve hiçbir sunucuya gönderilmez.
+              </p>
+            </div>
+            <span class="feature-action-tag" style="color: var(--primary);">İnternetsiz · Reklamsız · Hızlı</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Interactive Live Question Preview -->
+    <section id="ornek-soru" class="section section-muted">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="badge badge-accent">Canlı Uygulama Deneyimi</span>
+          <h2 class="section-title">ÖSYM Kitapçık Düzeninde Örnek Soruyu Çözün</h2>
+          <p class="section-desc">
+            Uygulamadaki 4.594 sorunun tamamı konu etiketli, 5 şıklı ve detaylı çözüm açıklamalıdır.
+            Aşağıdan bir ders seçip şıklara tıklayarak çözüm ekranını hemen deneyin:
+          </p>
+        </div>
+
+        <div class="quiz-demo-shell">
+          <div class="quiz-course-tabs" id="quizCourseTabs">
+            <button type="button" class="quiz-course-tab active" data-quiz-course="turkce">Türkçe</button>
+            <button type="button" class="quiz-course-tab" data-quiz-course="tarih">Tarih</button>
+            <button type="button" class="quiz-course-tab" data-quiz-course="cografya">Coğrafya</button>
+            <button type="button" class="quiz-course-tab" data-quiz-course="vatandaslik">Vatandaşlık</button>
+            <button type="button" class="quiz-course-tab" data-quiz-course="guncel">Güncel Bilgiler</button>
+          </div>
+
+          <div class="quiz-meta-row">
+            <span class="badge badge-primary" id="quizTopicBadge">Cümlede Anlam</span>
+            <span class="osym-ais-pill" id="quizIdBadge">Örnek Soru · 1 / 5</span>
+          </div>
+
+          <div class="quiz-question-box" id="quizQuestionText"></div>
+
+          <div class="quiz-options" id="quizOptionsContainer"></div>
+
+          <div class="quiz-explanation" id="quizExplanationBox">
+            <strong>Çözüm Açıklaması</strong>
+            <span id="quizExplanationText"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: App Screenshots Gallery (iOS & Android Switcher) -->
+    <section id="ekran-goruntuleri" class="section">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="badge badge-primary">Uygulama Vitrin Görselleri</span>
+          <h2 class="section-title">iOS ve Android Ekran Görüntüleri</h2>
+          <p class="section-desc">
+            Aşağıdaki sekmeden <strong>iOS (iPhone)</strong> veya <strong>Android</strong> görünümünü
+            seçebilir, görsellere tıklayarak tam ekran inceleyebilirsiniz.
+          </p>
+        </div>
+
+        <div class="gallery-toolbar">
+          <div class="segmented-control" role="tablist" aria-label="Platform Seçimi">
+            <button
+              type="button"
+              class="segment-btn active"
+              id="btnPlatformIos"
+              data-platform="ios"
+              role="tab"
+              aria-selected="true"
+            >
+              iOS (iPhone) Ekranları
+            </button>
+            <button
+              type="button"
+              class="segment-btn"
+              id="btnPlatformAndroid"
+              data-platform="android"
+              role="tab"
+              aria-selected="false"
+            >
+              Android Ekranları
+            </button>
+          </div>
+        </div>
+
+        <div class="screenshots-grid" id="screenshotsGrid">
+          <!-- Screen 0: Splash -->
+          <article class="screenshot-card" data-zoom-card>
+            <div class="device-bezel">
+              <img
+                src="assets/i0.png"
+                data-ios-src="assets/i0.png"
+                data-android-src="assets/a0.png"
+                alt="KPSS Açılış Ekranı"
+                class="platform-screenshot"
+              />
+            </div>
+            <div class="screenshot-meta">
+              <span class="screenshot-step">1. Ekran</span>
+              <h3 class="screenshot-title">Kurumsal Açılış Ekranı</h3>
+              <p class="screenshot-caption">ÖSYM koyu antrasit (#0F141C) zemin ve 3/4 kesik daire amblemi</p>
+            </div>
+          </article>
+
+          <!-- Screen 1: Home -->
+          <article class="screenshot-card" data-zoom-card>
+            <div class="device-bezel">
+              <img
+                src="assets/i1.png"
+                data-ios-src="assets/i1.png"
+                data-android-src="assets/a1.png"
+                alt="KPSS Ana Sayfa ve Günlük Hedef"
+                class="platform-screenshot"
+              />
+            </div>
+            <div class="screenshot-meta">
+              <span class="screenshot-step">2. Ekran</span>
+              <h3 class="screenshot-title">Ana Sayfa &amp; Günlük Hedef</h3>
+              <p class="screenshot-caption">Günlük hedef halkası, 10 soruluk hızlı test, Yanlışlarım ve Favorilerim</p>
+            </div>
+          </article>
+
+          <!-- Screen 2: Courses -->
+          <article class="screenshot-card" data-zoom-card>
+            <div class="device-bezel">
+              <img
+                src="assets/i2.png"
+                data-ios-src="assets/i2.png"
+                data-android-src="assets/a2.png"
+                alt="KPSS Spiralli Ders Defterleri"
+                class="platform-screenshot"
+              />
+            </div>
+            <div class="screenshot-meta">
+              <span class="screenshot-step">3. Ekran</span>
+              <h3 class="screenshot-title">Spiralli Ders Defterleri</h3>
+              <p class="screenshot-caption">5 ders için özel renk kodlu spiralli defterler ve ilerleme çubukları</p>
+            </div>
+          </article>
+
+          <!-- Screen 3: Stats -->
+          <article class="screenshot-card" data-zoom-card>
+            <div class="device-bezel">
+              <img
+                src="assets/i3.png"
+                data-ios-src="assets/i3.png"
+                data-android-src="assets/a3.png"
+                alt="KPSS İstatistik ve Net Analizi"
+                class="platform-screenshot"
+              />
+            </div>
+            <div class="screenshot-meta">
+              <span class="screenshot-step">4. Ekran</span>
+              <h3 class="screenshot-title">İstatistik &amp; Net Analizi</h3>
+              <p class="screenshot-caption">ÖSYM standartlarına göre toplam net, 7 günlük grafik ve ders başarısı</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Yasal Feragatname & Bağımsızlık Beyanı -->
+    <section class="section section-muted">
+      <div class="container">
+        <div class="disclaimer-card">
+          <h3>
+            <span class="osym-ais-pill">YASAL BİLDİRİM</span>
+            ÖSYM Bağımsızlık Beyanı &amp; Veri Güvenliği
+          </h3>
+          <p>
+            <strong>Bağımsızlık Beyanı:</strong> Bu uygulama Ölçme, Seçme ve Yerleştirme Merkezi (ÖSYM)
+            veya herhangi bir resmi devlet kurumu ile bağlantılı değildir, resmi kurumları temsil etmez.
+            KPSS adayları için bağımsız bir sınava hazırlık ve çalışma aracı olarak geliştirilmiştir.
+          </p>
+          <p>
+            <strong>Gizlilik &amp; Çevrimdışı Çalışma:</strong> Uygulama tamamen çevrimdışı (offline-first)
+            çalışır; kişisel verilerinizi toplamaz, üçüncü taraflarla paylaşmaz ve tüm soru çözümü / istatistik
+            verilerinizi yalnızca cihazınızın yerel veritabanında saklar. Detaylı bilgi için
+            <a href="privacy-policy.html"><strong>Gizlilik Politikası</strong></a> ve
+            <a href="terms-and-conditions.html"><strong>Kullanım Koşulları</strong></a> sayfalarını inceleyebilirsiniz.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <a href="index.html" class="brand-link">
+          <img src="assets/icon.png" alt="KPSS İkon" class="brand-icon" />
+          <div class="brand-text-group">
+            <span class="brand-name">KPSS Hazırlık: Soru Defteri</span>
+            <span class="osym-ais-pill">v1.0.0</span>
+          </div>
+        </a>
+
+        <ul class="footer-links">
+          <li><a href="#defterler">Ders Defterleri</a></li>
+          <li><a href="#ozellikler">Özellikler</a></li>
+          <li><a href="#ekran-goruntuleri">Ekran Görüntüleri</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy (Gizlilik Politikası)</a></li>
+          <li><a href="terms-and-conditions.html">Terms &amp; Conditions (Kullanım Koşulları)</a></li>
+          <li><a href="mailto:sevinc.aeren@gmail.com">İletişim: sevinc.aeren@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 KPSS Mobil Soru Bankası (com.sevincaeren.kpssmobil). Tüm hakları saklıdır.</span>
+        <span>ÖSYM &amp; AİS esinli tasarım · %100 Çevrimdışı Mobil Uygulama</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal for Screenshots -->
+  <div class="lightbox" id="screenshotLightbox" role="dialog" aria-label="Ekran görüntüsü önizleme">
+    <img src="" alt="Tam ekran uygulama görüntüsü" id="lightboxImg" />
+  </div>
+
+  <!-- Interactive Scripts -->
+  <script>
+    (function () {
+      // 1. Theme Toggle (Light / Dark)
+      const htmlEl = document.documentElement;
+      const themeBtn = document.getElementById('themeToggleBtn');
+      const themeLabel = document.getElementById('themeToggleLabel');
+      const savedTheme = localStorage.getItem('kpss_web_theme');
+      if (savedTheme === 'dark' || savedTheme === 'light') {
+        htmlEl.setAttribute('data-theme', savedTheme);
+      }
+
+      function syncThemeUI() {
+        const current = htmlEl.getAttribute('data-theme') || 'light';
+        themeLabel.textContent = current === 'dark' ? 'Açık Tema' : 'Koyu Tema';
+      }
+      syncThemeUI();
+
+      themeBtn.addEventListener('click', function () {
+        const current = htmlEl.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        htmlEl.setAttribute('data-theme', current);
+        localStorage.setItem('kpss_web_theme', current);
+        syncThemeUI();
+      });
+
+      // 2. 5 Courses & 38 Topics Data (Exact match with kpss-mobil catalog)
+      const COURSE_TOPICS = {
+        turkce: {
+          title: 'Türkçe Defteri — Alt Konu Dağılımı',
+          summary: '8 Konu · 1.468 Soru',
+          topics: [
+            ['Paragraf', 586],
+            ['Dil Bilgisi', 237],
+            ['Cümlede Anlam', 189],
+            ['Sözcükte Anlam', 130],
+            ['Yazım Kuralları', 99],
+            ['Noktalama', 91],
+            ['Sözel Mantık', 81],
+            ['Anlatım Bozukluğu', 55]
+          ]
+        },
+        tarih: {
+          title: 'Tarih Defteri — Alt Konu Dağılımı',
+          summary: '10 Konu · 1.544 Soru',
+          topics: [
+            ['Osmanlı Dağılma ve Islahatlar', 238],
+            ['Atatürk İlke ve İnkılapları', 215],
+            ['Osmanlı Kültür ve Medeniyeti', 177],
+            ['Millî Mücadele Hazırlık Dönemi', 173],
+            ['Kurtuluş Savaşı', 167],
+            ['Osmanlı Kuruluş ve Yükselme', 142],
+            ['İlk Türk-İslam Devletleri ve Beylikler', 140],
+            ['Atatürk Dönemi İç ve Dış Politika', 103],
+            ['İslamiyet Öncesi Türk Tarihi', 102],
+            ['Çağdaş Türk ve Dünya Tarihi', 87]
+          ]
+        },
+        cografya: {
+          title: 'Coğrafya Defteri — Alt Konu Dağılımı',
+          summary: '8 Konu · 917 Soru',
+          topics: [
+            ['Nüfus ve Yerleşme', 139],
+            ['Madenler, Enerji ve Sanayi', 137],
+            ['Yer Şekilleri', 131],
+            ['Tarım ve Hayvancılık', 120],
+            ['İklim ve Bitki Örtüsü', 120],
+            ['Ulaşım, Ticaret ve Turizm', 103],
+            ['Coğrafi Konum', 90],
+            ['Bölgeler ve Projeler', 77]
+          ]
+        },
+        vatandaslik: {
+          title: 'Vatandaşlık Defteri — Alt Konu Dağılımı',
+          summary: '6 Konu · 467 Soru',
+          topics: [
+            ['Yargı ve İdare', 95],
+            ['Hukukun Temel Kavramları', 80],
+            ['Anayasa ve Genel Esaslar', 75],
+            ['Yasama', 74],
+            ['Yürütme', 72],
+            ['Temel Hak ve Ödevler', 71]
+          ]
+        },
+        guncel: {
+          title: 'Güncel Bilgiler Defteri — Alt Konu Dağılımı',
+          summary: '6 Konu · 198 Soru',
+          topics: [
+            ['Türkiye Gündemi', 43],
+            ['Uluslararası Gündem', 36],
+            ['Bilim ve Teknoloji', 36],
+            ['Kültür-Sanat', 35],
+            ['Ödüller', 24],
+            ['Spor', 24]
+          ]
+        }
+      };
+
+      const explorerTitle = document.getElementById('explorerCourseTitle');
+      const explorerSummary = document.getElementById('explorerCourseSummary');
+      const topicChipsGrid = document.getElementById('topicChipsGrid');
+      const notebookCards = document.querySelectorAll('.notebook-wrapper');
+
+      function renderTopics(courseKey) {
+        const data = COURSE_TOPICS[courseKey];
+        if (!data) return;
+        explorerTitle.textContent = data.title;
+        explorerSummary.textContent = data.summary;
+        topicChipsGrid.innerHTML = data.topics
+          .map(function (item) {
+            return (
+              '<div class="topic-chip"><span>' +
+              item[0] +
+              '</span><span>' +
+              item[1] +
+              ' soru</span></div>'
+            );
+          })
+          .join('');
+      }
+
+      notebookCards.forEach(function (card) {
+        card.addEventListener('click', function () {
+          notebookCards.forEach(function (c) {
+            c.classList.remove('active-notebook');
+          });
+          card.classList.add('active-notebook');
+          renderTopics(card.getAttribute('data-course'));
+        });
+      });
+
+      renderTopics('turkce');
+
+      // 3. Interactive Sample Quiz (Real verified questions from catalog)
+      const SAMPLE_QUESTIONS = {
+        turkce: {
+          topic: 'Türkçe · Yazım Kuralları',
+          id: 'Soru #tur-005',
+          body: '',
+          stem: 'Aşağıdaki cümlelerin hangisinde bir yazım yanlışı vardır?',
+          options: [
+            'Pek çok konuda anlaşamıyorduk.',
+            'Hiçbir öneri dikkate alınmadı.',
+            'Birkaç gün sonra yola çıkacağız.',
+            'Yüzyıllardır süregelen gelenekleri yaşatıyorlar.',
+            'Toplantıda herşey yeniden ele alındı.'
+          ],
+          correct: 4,
+          explanation:
+            '"Her şey" sözü her zaman ayrı yazılır; E seçeneğindeki "herşey" yazımı yanlıştır. Buna karşılık "hiçbir" ve "birkaç" sözcükleri kalıplaştıkları için bitişik yazılır.'
+        },
+        tarih: {
+          topic: 'Tarih · Osmanlı Dağılma ve Islahatlar (2019 KPSS)',
+          id: 'Soru #2019_GK_07',
+          body: '',
+          stem: 'Askerî yenilgiler sonrasında Batı dünyasıyla siyasi ilişkiler dışında teknik ve kültürel alanlarda da temasa geçilmesi gerekliliği, aşağıdakilerin hangisinde ilk kez ortaya çıkmıştır?',
+          options: [
+            'II. Meşrutiyet Devri',
+            'Lale Devri',
+            'Nizam-ı Cedit Devri',
+            'Tanzimat Devri',
+            'I. Meşrutiyet Devri'
+          ],
+          correct: 1,
+          explanation:
+            'Osmanlı Devleti, Batı\'nın teknik ve kültürel üstünlüğünü kabul ederek Batı tarzı ilk yenileşme hareketlerini Lale Devri\'nde başlatmıştır.'
+        },
+        cografya: {
+          topic: 'Coğrafya · Coğrafi Konum',
+          id: 'Soru #cog-001',
+          body: 'Türkiye\'nin en doğu ucu ile en batı ucu arasında yaklaşık 19 boylam farkı vardır. ',
+          stem: 'Buna göre, en doğudaki nokta ile en batıdaki nokta arasındaki yerel saat farkı kaç dakikadır?',
+          options: ['45', '60', '76', '80', '96'],
+          correct: 2,
+          explanation:
+            'Ardışık iki meridyen arasındaki yerel saat farkı 4 dakikadır; 19 × 4 = 76 dakika eder. Dünya batıdan doğuya döndüğü için doğudaki noktanın yerel saati ileridedir.'
+        },
+        vatandaslik: {
+          topic: 'Vatandaşlık · Yasama',
+          id: 'Soru #vat-019',
+          body: '',
+          stem: '2017 Anayasa değişikliği sonrasında Türkiye Büyük Millet Meclisinin üye tamsayısı ve seçim dönemi aşağıdakilerin hangisinde birlikte ve doğru olarak verilmiştir?',
+          options: [
+            '550 üye - 4 yıl',
+            '600 üye - 5 yıl',
+            '600 üye - 4 yıl',
+            '550 üye - 5 yıl',
+            '450 üye - 5 yıl'
+          ],
+          correct: 1,
+          explanation:
+            '2017 Anayasa değişikliğiyle TBMM\'nin üye sayısı 550\'den 600\'e çıkarılmış (m. 75), seçim dönemi de 4 yıldan 5 yıla uzatılmıştır (m. 77).'
+        },
+        guncel: {
+          topic: 'Güncel Bilgiler · Türkiye Gündemi',
+          id: 'Soru #gun-005',
+          body: '',
+          stem: 'Türkiye\'de aile kurumunun güçlendirilmesi ve nüfus yapısının korunması amacıyla 2025 yılı, Cumhurbaşkanlığı tarafından aşağıdakilerden hangisi olarak ilan edilmiştir?',
+          options: [
+            'Gençlik Yılı',
+            'Ahilik Yılı',
+            'Aile Yılı',
+            'Engelsiz Yaşam Yılı',
+            'Yeşil Dönüşüm Yılı'
+          ],
+          correct: 2,
+          explanation:
+            '2025 yılı, Cumhurbaşkanlığı tarafından "Aile Yılı" olarak ilan edilmiştir. Bu kapsamda ailenin korunmasına yönelik destek programları uygulanmıştır.'
+        }
+      };
+
+      const LETTERS = ['A', 'B', 'C', 'D', 'E'];
+      const quizTabs = document.querySelectorAll('.quiz-course-tab');
+      const quizTopicBadge = document.getElementById('quizTopicBadge');
+      const quizIdBadge = document.getElementById('quizIdBadge');
+      const quizQuestionText = document.getElementById('quizQuestionText');
+      const quizOptionsContainer = document.getElementById('quizOptionsContainer');
+      const quizExplanationBox = document.getElementById('quizExplanationBox');
+      const quizExplanationText = document.getElementById('quizExplanationText');
+
+      function renderQuiz(courseKey) {
+        const q = SAMPLE_QUESTIONS[courseKey];
+        if (!q) return;
+        quizTopicBadge.textContent = q.topic;
+        quizIdBadge.textContent = q.id;
+        quizQuestionText.innerHTML =
+          (q.body ? '<span>' + q.body + '</span>' : '') +
+          '<strong class="stem">' +
+          q.stem +
+          '</strong>';
+        quizExplanationBox.classList.remove('visible');
+        quizExplanationText.textContent = q.explanation;
+
+        quizOptionsContainer.innerHTML = '';
+        q.options.forEach(function (optText, idx) {
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'quiz-option-btn';
+          btn.innerHTML =
+            '<span class="quiz-option-letter">' +
+            LETTERS[idx] +
+            '</span><span>' +
+            optText +
+            '</span>';
+          btn.addEventListener('click', function () {
+            const allBtns = quizOptionsContainer.querySelectorAll('.quiz-option-btn');
+            allBtns.forEach(function (b, bIdx) {
+              b.disabled = true;
+              if (bIdx === q.correct) {
+                b.classList.add('correct');
+              } else if (bIdx === idx && idx !== q.correct) {
+                b.classList.add('wrong');
+              }
+            });
+            quizExplanationBox.classList.add('visible');
+          });
+          quizOptionsContainer.appendChild(btn);
+        });
+      }
+
+      quizTabs.forEach(function (tab) {
+        tab.addEventListener('click', function () {
+          quizTabs.forEach(function (t) {
+            t.classList.remove('active');
+          });
+          tab.classList.add('active');
+          renderQuiz(tab.getAttribute('data-quiz-course'));
+        });
+      });
+
+      renderQuiz('turkce');
+
+      // 4. iOS & Android Platform Screenshot Switcher
+      const btnIos = document.getElementById('btnPlatformIos');
+      const btnAndroid = document.getElementById('btnPlatformAndroid');
+      const screenshotImgs = document.querySelectorAll('.platform-screenshot');
+
+      function setPlatform(platform) {
+        const isIos = platform === 'ios';
+        btnIos.classList.toggle('active', isIos);
+        btnIos.setAttribute('aria-selected', String(isIos));
+        btnAndroid.classList.toggle('active', !isIos);
+        btnAndroid.setAttribute('aria-selected', String(!isIos));
+
+        screenshotImgs.forEach(function (img) {
+          const nextSrc = isIos
+            ? img.getAttribute('data-ios-src')
+            : img.getAttribute('data-android-src');
+          if (nextSrc) img.src = nextSrc;
+        });
+      }
+
+      btnIos.addEventListener('click', function () {
+        setPlatform('ios');
+      });
+      btnAndroid.addEventListener('click', function () {
+        setPlatform('android');
+      });
+
+      document.querySelectorAll('[data-select-platform]').forEach(function (link) {
+        link.addEventListener('click', function () {
+          setPlatform(link.getAttribute('data-select-platform'));
+        });
+      });
+
+      // 5. Screenshot Lightbox Zoom
+      const lightbox = document.getElementById('screenshotLightbox');
+      const lightboxImg = document.getElementById('lightboxImg');
+      document.querySelectorAll('[data-zoom-card]').forEach(function (card) {
+        card.addEventListener('click', function () {
+          const img = card.querySelector('img');
+          if (!img) return;
+          lightboxImg.src = img.src;
+          lightbox.classList.add('open');
+        });
+      });
+      lightbox.addEventListener('click', function () {
+        lightbox.classList.remove('open');
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') lightbox.classList.remove('open');
+      });
+    })();
+  </script>
+</body>
+</html>
